@@ -6,3 +6,6 @@ A lightweight, fast Python script to encrypt and decrypt text using the classic 
 
 ## If you'd like to try it:
 I've attached a public Google Colab notebook that runs the script: https://colab.research.google.com/drive/1uRbsP4nsbZ5X5DmZHSfRITGMux8AMVRQ
+
+## How it works
+Instead of changing each individual letter one by one, the code creates an alphabet map to swap all the original letters at the same time, leaving all non-letter untouched. It takes the first (shift) numbers and places them at the back of the alphabet. Then the code uses Python's translate tool to replace the given characters with those from the map, revealing the encrypted or decrypted text. 
