@@ -27,7 +27,7 @@ shift = int(input("By what shift?"))
 text = input("Paste text:")
 
 if answer == "Encrypt":
-	print(encrypted_text)
+	print(encrypt(text, shift))
 
 if answer == "Decrypt":
 	print(decrypt(text, shift))
